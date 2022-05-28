@@ -8,7 +8,7 @@ from math import ceil
 from traceback import print_exc
 from blessed import Terminal
 from signal import signal, SIGWINCH
-from src.model.constant import GREY, YELLOW, GREEN, COLS
+from wordle.src.model.constant import GREY, YELLOW, GREEN, COLS
 
 
 class View:

@@ -4,7 +4,7 @@ Author: Tashfeen, Ahmad
 The MIT License (MIT)
 """
 
-FILENAME = 'data/wordle.csv'
+FILENAME = '../../data/word_list.csv'
 GREY, YELLOW, GREEN = 0, 1, 2
 PL = ['?', GREY]  # placeholder
 COLS, ROWS = 5, 6

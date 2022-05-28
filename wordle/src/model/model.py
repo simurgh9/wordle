@@ -4,10 +4,11 @@ Author: Tashfeen, Ahmad
 The MIT License (MIT)
 """
 
-from src.model.constant import YELLOW, GREEN, COLS, ROWS, PL
-from src.model.constant import LOSER, PLAYING, WINNER, MESSAGE
-from src.model.constant import FILENAME, STATS
 from random import choice
+from pkgutil import get_data
+from wordle.src.model.constant import YELLOW, GREEN, COLS, ROWS, PL
+from wordle.src.model.constant import LOSER, PLAYING, WINNER, MESSAGE
+from wordle.src.model.constant import FILENAME, STATS
 
 
 class Model:
@@ -129,11 +130,11 @@ class Model:
             j += 1
 
     def __word_list__(self):
-        with open(FILENAME, 'r') as fl:
-            words = [ln.strip().split(',') for ln in fl.readlines()]
-            words = [(word[0], float(word[1])) for word in words]
-            words = sorted(words, key=lambda x: x[1], reverse=True)
-            words = [word[0] for word in words]
+        lines = get_data(__package__, FILENAME).decode('utf-8').splitlines()
+        words = [ln.strip().split(',') for ln in lines]
+        words = [(word[0], float(word[1])) for word in words]
+        words = sorted(words, key=lambda x: x[1], reverse=True)
+        words = [word[0] for word in words]
         return words
 
     def __set_message__(self, message):

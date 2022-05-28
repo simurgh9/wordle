@@ -6,7 +6,7 @@ The MIT License (MIT)
 
 from time import sleep
 from blessed import Terminal
-from src.model.constant import COLS
+from wordle.src.model.constant import COLS
 from abc import ABC, abstractmethod
 from blessed.keyboard import Keystroke
 

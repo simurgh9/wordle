@@ -4,8 +4,8 @@ Author: Tashfeen, Ahmad
 The MIT License (MIT)
 """
 
-from src.model.model import Model
-from src.model.constant import ALLOWED, CHEAT
+from wordle.src.model.model import Model
+from wordle.src.model.constant import ALLOWED, CHEAT
 
 
 class Control:
