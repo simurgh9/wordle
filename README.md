@@ -119,13 +119,13 @@ pip3 install blessed
 Now navigate to the project root and,
 
 ~~~
-python3 __main__.py
+python3 -m wordle
 ~~~
 
 All the options described above will work here as well, e. g.,
 
 ~~~
-python3 __main__.py --dolittle
+python3 -m wordle --dolittle
 ~~~
 
 I found the [setuptools documentation][STP] helpful as well.
