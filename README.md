@@ -104,8 +104,6 @@ Scribe can be run with `wordle -s <opener> <n>` or `wordle --scribe <opener> <n>
 
 Both of these players play like a human (on an algorithmic level). They maintain a list of words, i. e., their vocabulary and sieve it using the information revealed by the colour-coded tiles at each guess. Then they pick their next best guess from the sieved list and so forth. I am calling this "AI" because, well, there are probabilities and data involved (heh ok sorry...).
 
-To see the data or word-list with word-frequency comma-separated: `wordle --data` or `wordle -dt`.
-
 Lastly, `wordle --help` or `wordle -h` will print out help.
 
 # Development
