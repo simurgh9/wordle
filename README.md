@@ -128,7 +128,7 @@ All the options described above will work here as well, e. g.,
 python3 -m wordle --dolittle
 ~~~
 
-I found the [setuptools documentation][STP] helpful as well.
+I found the [setuptools documentation][STP] and this article [A Practical Guide to Using Setup.py][ART] helpful as well.
 
 ## Data
 
@@ -158,3 +158,4 @@ I got interested in the game after watching [Grant Sanderson's video][3BB] relat
 [MIT]: https://mit-license.org
 [3BB]: https://youtu.be/v68zYyaEmEA
 [STP]: https://packaging.python.org/en/latest/guides/distributing-packages-using-setuptools
+[ART]: https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/
